@@ -1,0 +1,315 @@
+body {
+  background: #f2ffe6;
+}
+.sub-main {
+  width: 1300px;
+  height: 2000px;
+  border: thin solid #708090;
+  margin: auto
+}
+		   
+h1 {
+ font-size: 50px;
+ color: #3b0066;
+ float: left;
+}
+
+#search {
+  float: right;
+  padding-top: 80px;
+  padding-right: 35px;
+}
+#searchinput {
+  width: 230px;
+  height: 35px;
+  font-size: 18px;
+}
+
+#searchinput2 {
+  width: 70px;
+  height: 35px;
+  font-size: 18px;
+}
+
+#logo {
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#navigation {
+  clear: both;
+}
+
+ul.nav-main {
+  text-align: center;
+  position: relative;
+  z-index: 597;
+  border: thin solid green;
+  padding: 12px;
+  background: black;
+}
+
+ul.nav-main li:hover > ul {
+  visibility: visible;
+}            
+
+ul.nav-main li {
+  display: inline;   
+  border: thin solid black;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+ul.nav-main li:hover {
+  background: #1a1a1a;  
+  
+}                
+
+ul.nav-main li a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 13px;
+  
+  padding-right: 45px;
+  padding-left: 45px;
+  color: white;
+} 
+
+ul.nav-main li a:hover {
+	color: #E0FFFF;
+}
+
+ul.nav-sub {
+  visibility: hidden;
+  position: absolute;
+  z-index: 598;
+  margin-left: 193px;
+  padding-top: 10px;
+}
+
+
+ul.nav-sub li {
+  display: block;
+  list-style: none;
+  float: none;
+  background: black;
+  padding: 6px;
+}
+
+ul.nav-sub li a {
+  padding-left: 25px;
+}
+
+ul.nav-sub li:hover {
+  background: #1a1a1a;
+
+}
+
+ul.nav-sub2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 598;
+  margin-left: 386.6px;
+  padding-top: 10px;
+  width: 221px;
+}
+
+ul.nav-sub2 li {
+  display: block;
+  list-style: none;
+  float: none;
+  background: black;
+  padding: 5px;
+}
+
+ul.nav-sub2 li:hover {
+  background: #1a1a1a;
+}
+
+ul.nav-sub2 li a {
+  padding-right: 38px;
+}
+
+#slides {
+    position: relative;
+    height: 410px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;    
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: -18px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slideimg {
+width: 1300px;
+height: 410px;
+}
+
+#container {
+  width: 100%;
+  height: 1170px;
+}
+
+article {
+  width: 68%;
+  height: 1170px;
+  border: thin solid #FFFAF0;
+  border-radius: 7px 7px 7px 7px;
+  float: left;
+  margin-left: 1%;
+  background: #F5F5F5;
+}
+
+h3 {
+  margin-left: 30px;
+  font-size: 27px;
+}
+.p1 {
+  font-size: 25px;
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+aside {
+  width: 28%;
+  border: thin solid #FFFAF0;
+  border-radius: 7px 7px 7px 7px;
+  float: right;
+  height: 1170px;
+  margin-right: 1%;
+  background: #F5F5F5;
+}
+
+#external {
+  width: 330px;
+  border: thin solid #C0C0C0;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 15.5px;
+  margin-top: 20px;
+  background: #F0F8FF;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: none;
+}
+.find {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 10px; 
+}
+
+.find li {
+  padding-top: 40px;
+}
+
+.find li a {
+  text-decoration: ;
+  padding: 10px;
+
+}
+
+.find li a:hover {
+  color: blue;
+}
+
+.gif {
+  margin-left: 15.5px;
+  margin-top: 20px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+#email {
+  width: 200px;
+  height: 25px;
+  font-size: 20px;
+}
+
+#button {
+  height: 35px;
+  margin-top: 10px;
+  float: right;
+  margin-right: 67px;
+  font-size: 20px;
+}
+#form1 {
+  width: 330px;
+  height: 230px;
+  border: thin solid #C0C0C0;
+  border-radius: 8px 8px 8px 8px;
+  text-align: center;
+  margin-left: 15.5px;
+  margin-top: 20px;
+  background: #F5FFFA;
+}
+
+#report {
+  font-size: 20px;
+  text-decoration: none;
+  color: #6666ff;
+  padding-left: 20px;
+}
+
+footer {
+  background-color:  #00001a;
+  clear: both;
+  height: ;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+   
+}
+.navigation2 {
+  float: left;
+}
+.navigation2 li {
+  display: inline;
+}
+.navigation2 li a {
+  text-decoration: none;
+  border-right: thin solid white;
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer2 {
+  float: right;
+  margin-right: 80px;
+}
+.footer2 a {
+  margin-left: 50px;
+}
+
+.copyright {
+  font-size: 17px;
+  color: white;
+  margin-left: 55px;
+  padding-bottom: 23px;
+}

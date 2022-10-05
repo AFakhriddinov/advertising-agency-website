@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Advertising Agency Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" srs="scripts/js.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub-main">
+        <h1>
+          <a href="index.html"><img id="logo" src="images/logo.jpg" width="110px" height="70px"></a>Advertising Agency
+        </h1>
+        <form id="search">
+          <input id="searchinput" type="search" placeholder="Enter a keyword">
+          <input id="searchinput2" type="button" value="Search">
+        </form>
+          <nav>
+            <ul id="navigation" class="nav-main">
+              <li><a href="index.html">Home</a></li>              
+              <li><a href="#">Projects</a>
+  	            <ul class="nav-sub">
+                  <li><a href="Latest.html">Latest</a></li>
+                  <li><a href="Gloria.html">Gloria</a></li>
+                  <li><a href="Auswide.html">Auswide</a></li>
+                  <li><a href="Canopy.html">Canopy</a></li>
+                </ul>
+  	          </li>
+              <li><a href="#">Order now</a>
+                 <ul class="nav-sub2">
+                  <li><a href="Digital.html">Digital</a></li>
+                  <li><a href="Print.html">Print</a></li>
+                 </ul>
+              </li>
+              <li><a href="Contacts.html">Contacts</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Sitemap.html">Sitemap</a></li>
+            </ul>
+          </nav>
+          <div> 
+            <ul id="slides">
+                <li class="slide showing"><img src="images/slide1.jpg" ></li>
+                <li class="slide"><img class="slideimg" src="images/slide2.jpg"></li>
+                <li class="slide"><img class="slideimg" src="images/slide3.jpg"></li>
+                <li class="slide"><img class="slideimg" src="images/slide4.jpg"></li>
+              
+            </ul>
+            <!--the script for slides -->
+            <script>
+            //declaring a variable called playing whose value is ture
+              var playing = true;
+              //declaring slides variable by selecting the class slide inside the ID slides
+                  var slides = document.querySelectorAll('#slides .slide');
+                  //declaring a variable currentSlide whose index is zero
+                  var currentSlide = 0;
+                  // declaring a variable slideInterval settting the interval of the next slide to 2 seconds
+                  var slideInterval = setInterval(nextSlide,2000); 
+                  //declaring a function nextSlide       
+                  function nextSlide() {
+                    //calling the function goToSlide and incrementing index of current slide by 1
+                      goToSlide(currentSlide+1);
+                  }                  
+                  //declaring a function goToSlide
+                  function goToSlide(n) {
+                    //Changing from one slide to another slide
+                      slides[currentSlide].className = 'slide';
+                      currentSlide = (n+slides.length)%slides.length;
+                      slides[currentSlide].className = 'slide showing';
+                  }
+            </script>
+          </div>
+          <section>
+            <div id="container">
+              <article>
+                <h2>Promote your business</h2>
+                <p class="p1">
+                  We are a creative company that puts people at the center of everything we do.
+                  Our objective is the creation of tiny reactions in people’s heads after they interact with our ideas. We start by unlearning all the knee-jerk, familiar solutions to a problem and seeing it with fresh eyes. Then we rely on contact with real people in the real world to point us in the right direction. We never skip this step. The result is something so interesting that people actually seek it out and want to spend time with it.
+                </p>  
+                <h3>Services</h3>
+                <p class="p1">  
+                  We are a full-service advertising agency with a wide range of expertise, including creative, design, brand strategy, research and analytics, communication/media strategy, production (digital, broadcast, print and experiential). Our in-house production studio, eLevel, provides the full range of production services (photography, film, editing, music production, sound mixing) and our in-house development team—the BETA Group—codes, develops apps, builds digital experiences, prototypes products/experiences and designs information architecture. 
+                </p>  
+                <h3>We discover planning</h3>
+                <p class="p1">  
+                  In 1988 a London agency named Boase Massimi Pollitt reached out to GBS to see if it would be interested in affiliating. The good people at BMP introduced us to their unique brand of account planning (Stanley Pollitt was the inventor of modern-day planning). GBS was impressed and sold them a minority interest.
+                  Over the next few years, planning would greatly alter the way we worked and made our brand of creative work much more viable for very large clients.
+                </p>
+                <h3>Our history</h3>
+                <p class="p1">  
+                  The idea of opening the agency grew out of a freelance assignment for a company called Amazin’ Software. Jeff, Rich and Andy renamed the firm Electronic Arts, designed packaging that looked like record covers and ran ads that openly speculated about the future of computer gaming.
+                  In its first four years, the agency gained attention for its campaigns for the USFL’s Oakland Invaders and Heinz and Atari (Source from: goodbysilverstein.com 2017). <a href="http://goodbysilverstein.com/about/we-are-gsandp-3" target="_blank">more details</a> 
+                </p>
+              </article>
+
+              <aside>
+                <div id="external">
+                  <h2>Find out more</h2>
+                  <ul class="find">
+                    <li><a href="Ourcustomers.html">Our Customers</a></li>
+                    <li><a href="Our mission.html">Our Mission</a></li>
+                    <li><a href="Photogallery.html">Photo Gallery</a></li>
+                    <li><a href="Videogallery.html">Video Gallery</a></li>                  
+                  </ul>
+                 </div> 
+               
+                <form id="form1">
+                  <h2>Sign up for regular Emails</h2>
+                  <input id="email" type="email" placeholder="Email Address">
+                  <br />
+                  <input id="button" type="submit" value="Subscribe">
+                </form>
+
+                <img class="gif" src="images/gif1.gif" width="333" height="200">
+                <img class="gif" src="images/gif2.gif" width="333" height="200">                
+              </aside>
+            </div>
+          </section>
+
+          <footer>
+            <div class="footer">
+              <ul class="navigation2">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Latest.html">Projects</a></li>
+                <li><a href="Digital.html">Order now</a></li>
+                <li><a id="last" href="Contacts.html">Contacts</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>         
+              </ul>                
+            </div>
+            <div class="footer2">
+              <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.jpg" width="40" height="40"></a>
+              <a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg" width="40" height="40"></a>
+              <a href="http://www.twitter.com" target="_blank"><img src="images/twitter.jpg" width="40" height="40"></a>
+              <a href="http://www.google.com" target="_blank"><img src="images/google.jpg" width="40" height="40"></a>
+            </div>
+            <br />
+            <p class="copyright">
+              Copyright © 2017 Advertising Agency. All Rights Reserved
+            </p>
+            <p class="copyright">
+              This site was created to fulfill Web Technologies module’s requirements and does not represent actual company.  ID: 00003799
+              <a id="report" href="WT Report_00003799.docx" download>Download CW Report</a>
+            </p>
+
+          </footer>
+      </div>
+    </div>
+ </body>
+</html>
+

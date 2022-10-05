@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Advertising Agency Website</title>
+    <link rel="stylesheet" type="text/css" href="css/Digital.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub-main">
+      <!--this is a div for whose id css styles are given in css file-->
+      <div id="slideNotice"><h3>text</h3></div>
+        <h1>
+          <a href="index.html"><img id="logo" src="images/logo.jpg" width="110px" height="70px"></a>Advertising Agency
+        </h1>
+        <form id="search">
+          <input id="searchinput" type="search" placeholder="Enter a keyword">
+          <input id="searchinput2" type="button" value="Search">
+        </form>
+          <nav>
+            <ul id="navigation" class="nav-main">
+              <li><a href="index.html">Home</a></li>              
+              <li><a href="#">Projects</a>
+  	            <ul class="nav-sub">
+                  <li><a href="Latest.html">Latest</a></li>
+                  <li><a href="Gloria.html">Gloria</a></li>
+                  <li><a href="Auswide.html">Auswide</a></li>
+                  <li><a href="Canopy.html">Canopy</a></li>
+                </ul>
+  	          </li>
+              <li><a href="#">Order now</a>
+                 <ul class="nav-sub2">
+                  <li><a href="Digital.html">Digital</a></li>
+                  <li><a href="Print.html">Print</a></li>
+                 </ul>
+              </li>
+              <li><a href="Contacts.html">Contacts</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Sitemap.html">Sitemap</a></li>
+            </ul>
+          </nav>
+          <h2>Digital Advertisement</h2>
+          <table id="first">
+            <tr>
+              <td><img src="images/digital1.jpg" width="220" height="160"></td>
+              <td><img src="images/digital2.jpg" width="220" height="160"></td>
+              <td><img src="images/digital3.jpg" width="220" height="160"></td>
+              <td><img src="images/digital4.jpg" width="220" height="160"></td>
+              <td><img src="images/digital5.jpg" width="220" height="160"></td>
+            </tr>
+          </table>
+          <p id="para">
+            Advertising has evolved. No longer is it restricted to print publications, static billboards, radio, and television. Modern technologies have opened the door to a whole new era of advertising–digital advertising. Digital advertising allows marketers and advertisers to reach and appeal to their core audiences in new ways and with more precision.The challenge of meeting the modern buyer's expectation of a continuous, cross-channel, and personal experience is met with new ad technology and innovations that continue to advance at break-neck speeds. New ad technology platforms, types of ads, methods of tracking, dynamic ad content, and advances such as the Internet of Things now provide endless opportunities for marketers and advertisers to engage their customers personally and across channels. (Source from: marketo.com 2017) <a href="https://www.marketo.com/definitive-guides/digital-advertising/" target="_blank"> more details</a>
+          </p>
+          <h3>
+            If you wish to order a digital version of your advertisement please fill in the following form and we will provide you with appropriate templates for your choice!
+          </h3>
+          <form id="form1">
+            <table id="second">
+              <tr>
+                <td>Contact Person:</td>
+                <td><input type="name" placeholder="Full name" id="input"></td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td><input type="email" id="input" placeholder="Valid email"></td>
+              </tr>
+              <tr>
+                <td>Company Website:</td>
+                <td><input type="name" id="input"></td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td><input type="text" id="input"></td>
+              </tr>
+              <tr>
+                <td>Advertisement Type:</td>
+                <td>
+                  <label class="lab" for="animated">Animated<input type="radio" name="radio" id="animated"></label>                
+                  <label class="lab" for="static">Static<input type="radio" name="radio" id="static"></label>
+                </td>
+              </tr>
+            </table>
+            <table id="second">              
+              <tr>
+                <td>
+                  <label for="fave">Select Price Range:
+                    <select id="sel" name="fave">
+                      <option value="$10">$10</option>
+                      <option value="$20">$20</option>
+                      <option value="$30">$30</option>
+                      <option value="$40">$40</option>
+                      <option value="$50">$50</option>
+                      <option value="$100">$100</option>
+                      <option value="$200">$200</option>
+                      <option value="$300">$300</option>
+                      <option value="$400">$400</option>
+                      <option value="$500">$500</option>
+                    </select>
+                    <span id="select_feedback"></span>           
+
+                  </label>
+                </td>
+              </tr>              
+              <tr>
+                <td>
+                  <input type="button" value="Submit" id="submit">
+                </td>
+              </tr>
+            </table>
+          </form>
+          <footer>
+            <div class="footer">
+              <ul class="navigation2">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Latest.html">Projects</a></li>
+                <li><a href="Digital.html">Order now</a></li>
+                <li><a id="last" href="Contacts.html">Contacts</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>         
+              </ul>                  
+            </div>
+            <div class="footer2">
+              <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.jpg" width="40" height="40"></a>
+              <a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg" width="40" height="40"></a>
+              <a href="http://www.twitter.com" target="_blank"><img src="images/twitter.jpg" width="40" height="40"></a>
+              <a href="http://www.google.com" target="_blank"><img src="images/google.jpg" width="40" height="40"></a>
+            </div>
+            <br />
+            <p class="copyright">
+              Copyright © 2017 Advertising Agency. All Rights Reserved
+            </p>
+            <p class="copyright">
+              This site was created to fulfill Web Technologies module’s requirements and does not represent actual company.  ID: 00003799
+              <a id="report" href="WT Report_00003799.docx" download>Download CW Report</a>
+            </p>
+
+          </footer>
+
+          <script>
+                    //change event is applied here
+                    //when an option is selected, function runs
+                      $("#sel").change(function() {
+                        //varaiable listitem is declared which is equal to Id sell and option value
+                        var listitem = $("#sel").val();
+                        //select_feedback id shows the html code which is 'you have selected' together with variable listitem.
+                        $("#select_feedback").html("You have selected: " + listitem);
+                      });
+
+
+                      //when submit button, whose id is submit, is clicked, function is run
+                      $("#submit").click(function() {                      
+                        //and the following text slides down from the top of the form
+                        slideNotice("Your response has been recorded. We will contact you soon. Thank you for your interest!");
+                      });
+                      //this function contains a text in slideNotice ID and the text slides down from top and the delaying time is 2.3 seconds. We can change delaying time according to our preference
+                      function slideNotice (text) {
+                        //div element whose id is slideNotice is triggered and it show the text by sliding down
+                        $("#slideNotice").html("<h3>" + text + "</h3>").slideDown().delay(2300).slideUp();
+                      };
+                  
+
+                    </script>
+
+      </div>
+    </div>
+ </body>
+</html>
